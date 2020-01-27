@@ -244,7 +244,7 @@ class Game
 		var timerDiv = document.getElementById('timerDiv');
 		var difference = (now - timerDiv.startTime)/1000;
 		var hours = Math.floor(difference/3600);
-		var minutes = Math.floor(difference/60);
+		var minutes = Math.floor((difference - hours*3600)/60);
 		var seconds = Math.floor(difference%60);
 
 		if (hours < 10)
