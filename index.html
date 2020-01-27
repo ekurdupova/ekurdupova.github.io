@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+  text-align: center;
+}
+button {
+  background-color: #555555;
+  font-size: 16px;
+  color: black;
+  padding: 10px 15px;
+  margin-right: 3px;
+  border: 2px solid #ffffff;
+}
+</style>
+</head>
+<script src="src/MathUtil.js"></script>
+<script src="src/Cell.js"></script>
+<script src="src/MainBoard.js"></script>
+<script src="src/GameData.js"></script>
+<script src="src/GameCalculator.js"></script>
+<script src="src/GameGenerator.js"></script>
+<script src="src/Game.js"></script>
+<script src="src/Conditions.js"></script>
+<script>
+function load()
+{
+	window.MathUtil = new MathUtil();
+	
+	var game = new Game();
+	game.render(document.getElementsByTagName("BODY")[0], document);
+}
+</script>
+<body onload="load()" position="relative">
+</body>
+</html>
