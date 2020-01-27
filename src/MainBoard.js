@@ -7,6 +7,7 @@ class MainBoard extends EventTarget
 		
 		this.table = document.createElement('table');
 		this.table.width = '53%';
+		this.table.style.tableLayout = 'fixed';
 		
 		this.table.style.backgroundColor = 'fefefe';
 		
