@@ -15,23 +15,7 @@ button {
 }
 </style>
 </head>
-<script src="src/MathUtil.js"></script>
-<script src="src/Cell.js"></script>
-<script src="src/MainBoard.js"></script>
-<script src="src/GameData.js"></script>
-<script src="src/GameCalculator.js"></script>
-<script src="src/GameGenerator.js"></script>
-<script src="src/Game.js"></script>
-<script src="src/Conditions.js"></script>
-<script>
-function load()
-{
-	window.MathUtil = new MathUtil();
-	
-	var game = new Game();
-	game.render(document.getElementsByTagName("BODY")[0], document);
-}
-</script>
-<body onload="load()" position="relative">
+<body>
+<script src="index.bundle.js"></script>
 </body>
 </html>
